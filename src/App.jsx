@@ -54,8 +54,8 @@ function NavBar({ menuOpen, setMenuOpen }) {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-dark/95 backdrop-blur-md border-b border-white/10">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#home" className="text-2xl font-bold text-white tracking-tight">
-          EF <span className="text-primary">Garage</span>
+        <a href="#home" className="flex items-center">
+          <img src="/logo.jpeg" alt="EF Garage" className="h-10 w-auto" />
         </a>
 
         {/* Desktop Links */}
@@ -564,8 +564,8 @@ function Footer() {
   return (
     <footer className="bg-dark-light border-t border-white/10 py-10 px-6">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-        <div className="text-2xl font-bold text-white tracking-tight">
-          EF <span className="text-primary">Garage</span>
+        <div>
+          <img src="/logo.jpeg" alt="EF Garage" className="h-10 w-auto" />
         </div>
         <div className="flex gap-8">
           {["Home", "About", "Services", "Booking", "Contact"].map((l) => (
